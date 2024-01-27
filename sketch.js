@@ -31,7 +31,7 @@ function draw() {
     text("angle", angleSlider.x + angleSlider.width + 20, angleSlider.y + angleSlider.height / 0.9);
     text("branch length", branchLengthSlider.x + branchLengthSlider.width + 20, branchLengthSlider.y + branchLengthSlider.height / 0.9);
     translate(width / 2, height);
-    branch(30 + branchLength * 3.7);
+    branch(30 + (branchLength * 3.7 * windowHeight) / 1350);
 }
 
 function branch(length) {
